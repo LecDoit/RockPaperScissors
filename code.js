@@ -1,10 +1,12 @@
 function computerPlay(){
-    var words = ['rock', 'papper', 'scissors'];
-    var randomword = words[Math.floor(Math.random()) *  words.length];
-    let test = Math.floor(Math.random());
-    let test2 = words.length;
-    let test3 = words[Math.floor((Math.random() * words.length))];
-    
-    console.log(test3)
+    let words = ['rock', 'papper', 'scissors'];
+    let word = words[Math.floor((Math.random() * words.length))];
+    console.log(word)
+    return (word)
+}
 
+function playerSelection(){
+    var input = window.prompt('Choose: paper,rock or scissors.')
+    console.log(input)
+    return input
 }
